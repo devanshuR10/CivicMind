@@ -1,0 +1,19 @@
+.venv/
+**/node_modules/
+**/dist/
+**/__pycache__/
+*.py[cod]
+
+# Local secrets and runtime data
+**/.env
+**/.env.*
+!**/.env.example
+backend/*.db
+backend/*.db-*
+*.sqlite
+*.sqlite3
+
+# Local logs and editor metadata
+*.log
+.DS_Store
+.vscode/

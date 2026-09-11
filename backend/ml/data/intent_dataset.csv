@@ -1,0 +1,873 @@
+text,intent
+stagnant water pool near civil lines causing mosquito breeding,GRIEVANCE
+that is not my problem,DENIAL
+power has been out in model town for 2 hours,GRIEVANCE
+change the location,CORRECTION
+traffic signal lights not working at railway station road intersection,GRIEVANCE
+wrong department,CORRECTION
+hi,GREETING
+yes submit,CONFIRMATION
+overflowing waste bin in saket,GRIEVANCE
+awesome thanks,THANKS
+tell me about yourself,CAPABILITIES
+options,CAPABILITIES
+power has been out in karol bagh for 2 hours,GRIEVANCE
+aap kya karte ho,CAPABILITIES
+proceed,CONFIRMATION
+overflowing waste bin in saket,GRIEVANCE
+street lights have been off for 7 nights in railway station road,GRIEVANCE
+okay thanks,THANKS
+xyz123,UNKNOWN
+that's right,CONFIRMATION
+water has not come for 4 days in karol bagh,GRIEVANCE
+footpath tiles are broken near vasant kunj,GRIEVANCE
+can you help me,CAPABILITIES
+power has been out in saket for 2 hours,GRIEVANCE
+awesome thanks,THANKS
+thank you,THANKS
+overflowing waste bin in vasant kunj,GRIEVANCE
+hamare area saket me paani nahi aa raha hai,GRIEVANCE
+nali overflow kar rahi hai vasant kunj me,GRIEVANCE
+thank you so much,THANKS
+huge deep potholes on the main road in railway station road,GRIEVANCE
+hey buddy,GREETING
+help me,CAPABILITIES
+blabla,UNKNOWN
+i am fine but the pipeline outside my house in civil lines is leaking,GRIEVANCE
+location is incorrect,CORRECTION
+dark street near railway station road creating safety risk,GRIEVANCE
+help,CAPABILITIES
+our taps are dry since yesterday,GRIEVANCE
+that is not my problem,DENIAL
+i'm good,GREETING
+shukriya,THANKS
+thanks bot,THANKS
+i want to change the details,CORRECTION
+hello sir,GREETING
+bahut dhanyawad,THANKS
+bijli 6 ghante se nahi hai sector 17 me,GRIEVANCE
+nali overflow kar rahi hai saket me,GRIEVANCE
+overflowing waste bin in civil lines,GRIEVANCE
+garbage has not been collected from karol bagh for 3 days,GRIEVANCE
+i'm fine,GREETING
+no,DENIAL
+category wrong hai,CORRECTION
+hello sir there is a water pipe leaking on the road in sector 17,GRIEVANCE
+open manhole on road near karol bagh,GRIEVANCE
+sahi hai,CONFIRMATION
+the road near sector 17 is completely broken and damaged,GRIEVANCE
+nali overflow kar rahi hai sector 17 me,GRIEVANCE
+thanks,THANKS
+our taps are dry since last night,GRIEVANCE
+huge pile of uncollected trash dumped near saket,GRIEVANCE
+our taps are dry since monday,GRIEVANCE
+water pipeline is leaking near vasant kunj,GRIEVANCE
+hello,GREETING
+great thanks,THANKS
+huge pile of uncollected trash dumped near saket,GRIEVANCE
+thanks a lot,THANKS
+what services do you offer,CAPABILITIES
+no,DENIAL
+water has not come for 7 days in model town,GRIEVANCE
+our taps are dry since monday,GRIEVANCE
+waterlogging in vasant kunj after light rain,GRIEVANCE
+yes,CONFIRMATION
+hii,GREETING
+huge pile of uncollected trash dumped near saket,GRIEVANCE
+how are you,GREETING
+waterlogging in sector 17 after light rain,GRIEVANCE
+the road near karol bagh is completely broken and damaged,GRIEVANCE
+water pipeline is leaking near saket,GRIEVANCE
+blabla,UNKNOWN
+road ki condition bahut kharab hai karol bagh me,GRIEVANCE
+okay,CONFIRMATION
+dhanyawad,THANKS
+water pipeline is leaking near karol bagh,GRIEVANCE
+edit details,CORRECTION
+aap kaun ho,CAPABILITIES
+cricket score,UNKNOWN
+what are you,CAPABILITIES
+what is this,CAPABILITIES
+kya kar sakte ho,CAPABILITIES
+road ki condition bahut kharab hai sector 17 me,GRIEVANCE
+hellooo,GREETING
+drainage gutter overflow flooding road in civil lines,GRIEVANCE
+kachra 4 din se nahi uthaya gaya hai model town se,GRIEVANCE
+how can you help,CAPABILITIES
+change the location,CORRECTION
+play music,UNKNOWN
+about,CAPABILITIES
+blabla,UNKNOWN
+wrong department,CORRECTION
+aap kya karte ho,CAPABILITIES
+wrong department,CORRECTION
+nali overflow kar rahi hai civil lines me,GRIEVANCE
+haan,CONFIRMATION
+hello sir there is a water pipe leaking on the road in civil lines,GRIEVANCE
+proceed,CONFIRMATION
+aap kaun ho,CAPABILITIES
+testing 123,UNKNOWN
+good afternoon,GREETING
+ok,CONFIRMATION
+water pipeline is leaking near karol bagh,GRIEVANCE
+correct,CONFIRMATION
+aap kaun ho,CAPABILITIES
+traffic signal lights not working at vasant kunj intersection,GRIEVANCE
+hi bot,GREETING
+huge deep potholes on the main road in saket,GRIEVANCE
+the road near karol bagh is completely broken and damaged,GRIEVANCE
+what's up,GREETING
+open manhole on road near civil lines,GRIEVANCE
+i am fine but the pipeline outside my house in saket is leaking,GRIEVANCE
+sab badhiya,GREETING
+category wrong hai,CORRECTION
+transformer is sparking violently near civil lines,GRIEVANCE
+what services do you offer,CAPABILITIES
+sab badhiya,GREETING
+what is this,CAPABILITIES
+transformer is sparking violently near sector 17,GRIEVANCE
+what is the weather today,UNKNOWN
+namaskar,GREETING
+menu,CAPABILITIES
+that's not the category,CORRECTION
+hello there,GREETING
+huge pile of uncollected trash dumped near saket,GRIEVANCE
+proceed,CONFIRMATION
+thank you sir,THANKS
+good morning bot,GREETING
+perfect thanks,THANKS
+i am fine so the problem is that there is a road on that road there is a pipe leaking,GRIEVANCE
+waterlogging in sector 17 after light rain,GRIEVANCE
+confirm,CONFIRMATION
+sahi hai,CONFIRMATION
+change priority,CORRECTION
+stop,DENIAL
+hi,GREETING
+the road near railway station road is completely broken and damaged,GRIEVANCE
+i am fine so the problem is that there is a road on that road there is a pipe leaking,GRIEVANCE
+play music,UNKNOWN
+traffic signal lights not working at vasant kunj intersection,GRIEVANCE
+what services do you offer,CAPABILITIES
+huge deep potholes on the main road in model town,GRIEVANCE
+go ahead,CONFIRMATION
+what can you do,CAPABILITIES
+hello how are you,GREETING
+how does this work,CAPABILITIES
+garbage has not been collected from karol bagh for 5 days,GRIEVANCE
+hamare area karol bagh me paani nahi aa raha hai,GRIEVANCE
+thank you sir,THANKS
+street lights have been off for 3 nights in saket,GRIEVANCE
+hi bot,GREETING
+tum kaun ho,CAPABILITIES
+yep,CONFIRMATION
+who won the match,UNKNOWN
+nevermind,DENIAL
+no thanks,DENIAL
+play music,UNKNOWN
+open manhole on road near civil lines,GRIEVANCE
+that's not the category,CORRECTION
+garbage has not been collected from saket for 7 days,GRIEVANCE
+nevermind,DENIAL
+haye,GREETING
+water has not come for 3 days in model town,GRIEVANCE
+hiii,GREETING
+street light band hai railway station road me,GRIEVANCE
+hello,GREETING
+hello sir there is a water pipe leaking on the road in civil lines,GRIEVANCE
+hi bot,GREETING
+bijli 6 ghante se nahi hai civil lines me,GRIEVANCE
+tell me a joke,UNKNOWN
+xyz123,UNKNOWN
+perfect thanks,THANKS
+hello there,GREETING
+bilkul,CONFIRMATION
+fogging required urgently in sector 17,GRIEVANCE
+help me,CAPABILITIES
+good morning bot,GREETING
+i want to change the details,CORRECTION
+water has not come for 4 days in karol bagh,GRIEVANCE
+there is no water supply in railway station road,GRIEVANCE
+hamare area railway station road me paani nahi aa raha hai,GRIEVANCE
+good morning,GREETING
+hellooo,GREETING
+tell me about yourself,CAPABILITIES
+i am fine but the pipeline outside my house in civil lines is leaking,GRIEVANCE
+power has been out in civil lines for 4 hours,GRIEVANCE
+i am fine,GREETING
+random stuff,UNKNOWN
+shukriya,THANKS
+that is not my problem,DENIAL
+street lights have been off for 7 nights in railway station road,GRIEVANCE
+water pipeline is leaking near sector 17,GRIEVANCE
+dark street near vasant kunj creating safety risk,GRIEVANCE
+play music,UNKNOWN
+can you help me,CAPABILITIES
+live electrical wire dangling dangerously near karol bagh,GRIEVANCE
+street light band hai model town me,GRIEVANCE
+dark street near railway station road creating safety risk,GRIEVANCE
+there is no water supply in civil lines,GRIEVANCE
+waterlogging in civil lines after light rain,GRIEVANCE
+traffic signal lights not working at model town intersection,GRIEVANCE
+hello,GREETING
+thank you sir,THANKS
+kaise madad karoge,CAPABILITIES
+tell me a joke,UNKNOWN
+what is 2 plus 2,UNKNOWN
+yeah,CONFIRMATION
+what's up,GREETING
+dirty contaminated water coming from tap in civil lines,GRIEVANCE
+how can you help,CAPABILITIES
+yes please,CONFIRMATION
+how does this work,CAPABILITIES
+stagnant water pool near sector 17 causing mosquito breeding,GRIEVANCE
+haye,GREETING
+okay,CONFIRMATION
+hello bot,GREETING
+bijli 6 ghante se nahi hai civil lines me,GRIEVANCE
+traffic signal lights not working at civil lines intersection,GRIEVANCE
+hello,GREETING
+transformer is sparking violently near model town,GRIEVANCE
+hamare area saket me paani nahi aa raha hai,GRIEVANCE
+fogging required urgently in sector 17,GRIEVANCE
+yes,CONFIRMATION
+sure,CONFIRMATION
+hello there,GREETING
+street lights have been off for 7 nights in railway station road,GRIEVANCE
+water has not come for 5 days in sector 17,GRIEVANCE
+i am fine so the problem is that there is a road on that road there is a pipe leaking,GRIEVANCE
+options,CAPABILITIES
+overflowing waste bin in sector 17,GRIEVANCE
+bilkul,CONFIRMATION
+transformer is sparking violently near model town,GRIEVANCE
+there is no water supply in karol bagh,GRIEVANCE
+garbage has not been collected from karol bagh for 2 days,GRIEVANCE
+go ahead,CONFIRMATION
+i am fine,GREETING
+hello assistant,GREETING
+street light band hai railway station road me,GRIEVANCE
+fogging required urgently in model town,GRIEVANCE
+bijli 6 ghante se nahi hai vasant kunj me,GRIEVANCE
+yes,CONFIRMATION
+category wrong hai,CORRECTION
+dhanyawad,THANKS
+shukriya,THANKS
+footpath tiles are broken near railway station road,GRIEVANCE
+who are you,CAPABILITIES
+hello how are you,GREETING
+that's wrong,DENIAL
+that's wrong,DENIAL
+thanks a lot,THANKS
+hi sir,GREETING
+that's right,CONFIRMATION
+traffic signal lights not working at railway station road intersection,GRIEVANCE
+water has not come for 5 days in vasant kunj,GRIEVANCE
+dark street near sector 17 creating safety risk,GRIEVANCE
+namaste ji,GREETING
+water has not come for 7 days in sector 17,GRIEVANCE
+hamare area railway station road me paani nahi aa raha hai,GRIEVANCE
+incorrect,DENIAL
+random stuff,UNKNOWN
+road ki condition bahut kharab hai karol bagh me,GRIEVANCE
+kya kar sakte ho,CAPABILITIES
+power has been out in civil lines for 5 hours,GRIEVANCE
+yes submit,CONFIRMATION
+transformer is sparking violently near civil lines,GRIEVANCE
+nali overflow kar rahi hai sector 17 me,GRIEVANCE
+kachra 4 din se nahi uthaya gaya hai civil lines se,GRIEVANCE
+bijli 6 ghante se nahi hai saket me,GRIEVANCE
+namaskar,GREETING
+our taps are dry since this morning,GRIEVANCE
+hello bot,GREETING
+bijli 6 ghante se nahi hai saket me,GRIEVANCE
+shukriya,THANKS
+aap kya karte ho,CAPABILITIES
+live electrical wire dangling dangerously near model town,GRIEVANCE
+stagnant water pool near model town causing mosquito breeding,GRIEVANCE
+no the location is wrong,CORRECTION
+ok,CONFIRMATION
+fogging required urgently in railway station road,GRIEVANCE
+footpath tiles are broken near vasant kunj,GRIEVANCE
+thank you sir,THANKS
+kya kar sakte ho,CAPABILITIES
+hello bot,GREETING
+street lights have been off for 7 nights in civil lines,GRIEVANCE
+there is no water supply in vasant kunj,GRIEVANCE
+waterlogging in karol bagh after light rain,GRIEVANCE
+tum kaun ho,CAPABILITIES
+asdfghjkl,UNKNOWN
+yeah,CONFIRMATION
+street light band hai railway station road me,GRIEVANCE
+i am fine so the problem is that there is a road on that road there is a pipe leaking,GRIEVANCE
+info,CAPABILITIES
+no don't,DENIAL
+water has not come for 3 days in saket,GRIEVANCE
+hiii,GREETING
+go ahead,CONFIRMATION
+good morning,GREETING
+dirty contaminated water coming from tap in model town,GRIEVANCE
+good afternoon,GREETING
+hamare area karol bagh me paani nahi aa raha hai,GRIEVANCE
+power has been out in saket for 2 hours,GRIEVANCE
+help,CAPABILITIES
+kachra 4 din se nahi uthaya gaya hai saket se,GRIEVANCE
+hey assistant,GREETING
+dirty contaminated water coming from tap in civil lines,GRIEVANCE
+traffic signal lights not working at railway station road intersection,GRIEVANCE
+aap kaun ho,CAPABILITIES
+transformer is sparking violently near sector 17,GRIEVANCE
+cricket score,UNKNOWN
+drainage gutter overflow flooding road in saket,GRIEVANCE
+what are you,CAPABILITIES
+menu,CAPABILITIES
+i am fine but the pipeline outside my house in civil lines is leaking,GRIEVANCE
+what features do you have,CAPABILITIES
+can you help me,CAPABILITIES
+hello bot,GREETING
+haan,CONFIRMATION
+thank you,THANKS
+change priority,CORRECTION
+confirm,CONFIRMATION
+street lights have been off for 2 nights in railway station road,GRIEVANCE
+kachra 4 din se nahi uthaya gaya hai sector 17 se,GRIEVANCE
+hey buddy,GREETING
+not correct,DENIAL
+nope,DENIAL
+great thanks,THANKS
+good evening,GREETING
+help,CAPABILITIES
+hamare area civil lines me paani nahi aa raha hai,GRIEVANCE
+footpath tiles are broken near vasant kunj,GRIEVANCE
+traffic signal lights not working at railway station road intersection,GRIEVANCE
+i am fine so the problem is that there is a road on that road there is a pipe leaking,GRIEVANCE
+cricket score,UNKNOWN
+hello sir there is a water pipe leaking on the road in sector 17,GRIEVANCE
+fogging required urgently in saket,GRIEVANCE
+can you help me,CAPABILITIES
+i am good,GREETING
+bilkul,CONFIRMATION
+ha,CONFIRMATION
+great thanks,THANKS
+footpath tiles are broken near civil lines,GRIEVANCE
+live electrical wire dangling dangerously near railway station road,GRIEVANCE
+sure,CONFIRMATION
+nahi,DENIAL
+aap kya karte ho,CAPABILITIES
+power has been out in railway station road for 3 hours,GRIEVANCE
+yes that's correct,CONFIRMATION
+bilkul,CONFIRMATION
+huge pile of uncollected trash dumped near karol bagh,GRIEVANCE
+stop,DENIAL
+live electrical wire dangling dangerously near vasant kunj,GRIEVANCE
+transformer is sparking violently near vasant kunj,GRIEVANCE
+what is your purpose,CAPABILITIES
+open manhole on road near karol bagh,GRIEVANCE
+hi sir,GREETING
+road ki condition bahut kharab hai model town me,GRIEVANCE
+perfect thanks,THANKS
+location is incorrect,CORRECTION
+hii,GREETING
+thanks bot,THANKS
+who are you,CAPABILITIES
+waterlogging in saket after light rain,GRIEVANCE
+water pipeline is leaking near saket,GRIEVANCE
+water has not come for 7 days in sector 17,GRIEVANCE
+options,CAPABILITIES
+yes that's correct,CONFIRMATION
+i am fine so the problem is that there is a road on that road there is a pipe leaking,GRIEVANCE
+power has been out in sector 17 for 7 hours,GRIEVANCE
+kachra 4 din se nahi uthaya gaya hai civil lines se,GRIEVANCE
+thank you,THANKS
+hello sir there is a water pipe leaking on the road in saket,GRIEVANCE
+kachra 4 din se nahi uthaya gaya hai civil lines se,GRIEVANCE
+cancel,DENIAL
+what are you,CAPABILITIES
+hello sir there is a water pipe leaking on the road in karol bagh,GRIEVANCE
+ok,CONFIRMATION
+street light band hai karol bagh me,GRIEVANCE
+submit it,CONFIRMATION
+yes submit,CONFIRMATION
+hello sir there is a water pipe leaking on the road in civil lines,GRIEVANCE
+yes please,CONFIRMATION
+nope,DENIAL
+proceed,CONFIRMATION
+incorrect,DENIAL
+awesome thanks,THANKS
+thanks,THANKS
+correct,CONFIRMATION
+helo,GREETING
+garbage has not been collected from vasant kunj for 3 days,GRIEVANCE
+i am fine but the pipeline outside my house in saket is leaking,GRIEVANCE
+not correct,DENIAL
+that is not my problem,DENIAL
+namaste,GREETING
+kachra 4 din se nahi uthaya gaya hai railway station road se,GRIEVANCE
+hey buddy,GREETING
+transformer is sparking violently near civil lines,GRIEVANCE
+i'm good,GREETING
+hey there,GREETING
+garbage has not been collected from railway station road for 5 days,GRIEVANCE
+hello sir,GREETING
+hamare area railway station road me paani nahi aa raha hai,GRIEVANCE
+ha,CONFIRMATION
+incorrect,DENIAL
+garbage has not been collected from civil lines for 4 days,GRIEVANCE
+road ki condition bahut kharab hai railway station road me,GRIEVANCE
+the road near sector 17 is completely broken and damaged,GRIEVANCE
+live electrical wire dangling dangerously near saket,GRIEVANCE
+location change karo,CORRECTION
+street light band hai model town me,GRIEVANCE
+location change karo,CORRECTION
+okay,CONFIRMATION
+huge deep potholes on the main road in sector 17,GRIEVANCE
+testing 123,UNKNOWN
+bijli 6 ghante se nahi hai sector 17 me,GRIEVANCE
+no,DENIAL
+tum kaun ho,CAPABILITIES
+namaskar,GREETING
+kaise madad karoge,CAPABILITIES
+hamare area karol bagh me paani nahi aa raha hai,GRIEVANCE
+there is no water supply in karol bagh,GRIEVANCE
+movie tickets,UNKNOWN
+bijli 6 ghante se nahi hai model town me,GRIEVANCE
+power has been out in karol bagh for 3 hours,GRIEVANCE
+dark street near civil lines creating safety risk,GRIEVANCE
+huge pile of uncollected trash dumped near railway station road,GRIEVANCE
+i am fine but the pipeline outside my house in railway station road is leaking,GRIEVANCE
+helo,GREETING
+hey buddy,GREETING
+no the location is wrong,CORRECTION
+movie tickets,UNKNOWN
+namaskar,GREETING
+overflowing waste bin in model town,GRIEVANCE
+street lights have been off for 4 nights in saket,GRIEVANCE
+road ki condition bahut kharab hai karol bagh me,GRIEVANCE
+asdfghjkl,UNKNOWN
+overflowing waste bin in civil lines,GRIEVANCE
+live electrical wire dangling dangerously near sector 17,GRIEVANCE
+fogging required urgently in civil lines,GRIEVANCE
+what is your purpose,CAPABILITIES
+namaste,GREETING
+huge pile of uncollected trash dumped near sector 17,GRIEVANCE
+how are you,GREETING
+hello sir there is a water pipe leaking on the road in saket,GRIEVANCE
+what services do you offer,CAPABILITIES
+submit it,CONFIRMATION
+na,DENIAL
+how does this work,CAPABILITIES
+stagnant water pool near vasant kunj causing mosquito breeding,GRIEVANCE
+help,CAPABILITIES
+the road near model town is completely broken and damaged,GRIEVANCE
+how can you help,CAPABILITIES
+who won the match,UNKNOWN
+hello there,GREETING
+overflowing waste bin in civil lines,GRIEVANCE
+good evening,GREETING
+about,CAPABILITIES
+bijli 6 ghante se nahi hai model town me,GRIEVANCE
+stagnant water pool near railway station road causing mosquito breeding,GRIEVANCE
+edit details,CORRECTION
+dark street near railway station road creating safety risk,GRIEVANCE
+hey,GREETING
+what can you do,CAPABILITIES
+no the location is wrong,CORRECTION
+yes that's correct,CONFIRMATION
+i want to change the details,CORRECTION
+hamare area karol bagh me paani nahi aa raha hai,GRIEVANCE
+i am fine but the pipeline outside my house in karol bagh is leaking,GRIEVANCE
+street light band hai model town me,GRIEVANCE
+dirty contaminated water coming from tap in civil lines,GRIEVANCE
+great thanks,THANKS
+water pipeline is leaking near vasant kunj,GRIEVANCE
+sab badhiya,GREETING
+haye,GREETING
+garbage has not been collected from civil lines for 4 days,GRIEVANCE
+nevermind,DENIAL
+thankyou,THANKS
+testing 123,UNKNOWN
+dark street near karol bagh creating safety risk,GRIEVANCE
+tell me about yourself,CAPABILITIES
+stagnant water pool near vasant kunj causing mosquito breeding,GRIEVANCE
+i am good,GREETING
+na,DENIAL
+water pipeline is leaking near railway station road,GRIEVANCE
+nahi,DENIAL
+hey there,GREETING
+testing 123,UNKNOWN
+menu,CAPABILITIES
+hey,GREETING
+hii,GREETING
+i am good,GREETING
+fogging required urgently in model town,GRIEVANCE
+who are you,CAPABILITIES
+dirty contaminated water coming from tap in karol bagh,GRIEVANCE
+hellooo,GREETING
+about,CAPABILITIES
+street light band hai saket me,GRIEVANCE
+thanks a lot,THANKS
+kachra 4 din se nahi uthaya gaya hai karol bagh se,GRIEVANCE
+that's right,CONFIRMATION
+fogging required urgently in model town,GRIEVANCE
+huge pile of uncollected trash dumped near saket,GRIEVANCE
+open manhole on road near sector 17,GRIEVANCE
+helo,GREETING
+drainage gutter overflow flooding road in model town,GRIEVANCE
+hamare area model town me paani nahi aa raha hai,GRIEVANCE
+fogging required urgently in sector 17,GRIEVANCE
+huge deep potholes on the main road in karol bagh,GRIEVANCE
+drainage gutter overflow flooding road in railway station road,GRIEVANCE
+i am fine but the pipeline outside my house in civil lines is leaking,GRIEVANCE
+road ki condition bahut kharab hai civil lines me,GRIEVANCE
+asdfghjkl,UNKNOWN
+waterlogging in karol bagh after light rain,GRIEVANCE
+tell me a joke,UNKNOWN
+perfect thanks,THANKS
+hello assistant,GREETING
+road ki condition bahut kharab hai railway station road me,GRIEVANCE
+there is no water supply in railway station road,GRIEVANCE
+what can you do,CAPABILITIES
+kachra 4 din se nahi uthaya gaya hai karol bagh se,GRIEVANCE
+hello sir,GREETING
+i am fine but the pipeline outside my house in saket is leaking,GRIEVANCE
+there is no water supply in saket,GRIEVANCE
+nahi,DENIAL
+street light band hai vasant kunj me,GRIEVANCE
+ha,CONFIRMATION
+our taps are dry since this morning,GRIEVANCE
+huge deep potholes on the main road in saket,GRIEVANCE
+nope,DENIAL
+water pipeline is leaking near railway station road,GRIEVANCE
+traffic signal lights not working at saket intersection,GRIEVANCE
+dirty contaminated water coming from tap in model town,GRIEVANCE
+tell me about yourself,CAPABILITIES
+hii,GREETING
+nevermind,DENIAL
+what features do you have,CAPABILITIES
+how does this work,CAPABILITIES
+hey there,GREETING
+that's wrong,DENIAL
+water pipeline is leaking near vasant kunj,GRIEVANCE
+nali overflow kar rahi hai railway station road me,GRIEVANCE
+footpath tiles are broken near vasant kunj,GRIEVANCE
+help me,CAPABILITIES
+i'm good,GREETING
+thanks bot,THANKS
+water pipeline is leaking near karol bagh,GRIEVANCE
+location change karo,CORRECTION
+nali overflow kar rahi hai railway station road me,GRIEVANCE
+yes that's correct,CONFIRMATION
+live electrical wire dangling dangerously near karol bagh,GRIEVANCE
+street lights have been off for 2 nights in railway station road,GRIEVANCE
+incorrect,DENIAL
+i am fine so the problem is that there is a road on that road there is a pipe leaking,GRIEVANCE
+okay thanks,THANKS
+dirty contaminated water coming from tap in railway station road,GRIEVANCE
+hello sir there is a water pipe leaking on the road in civil lines,GRIEVANCE
+water pipeline is leaking near saket,GRIEVANCE
+stagnant water pool near vasant kunj causing mosquito breeding,GRIEVANCE
+hiii,GREETING
+i am fine so the problem is that there is a road on that road there is a pipe leaking,GRIEVANCE
+yeah,CONFIRMATION
+i am fine but the pipeline outside my house in railway station road is leaking,GRIEVANCE
+hello sir,GREETING
+change the location,CORRECTION
+nah,DENIAL
+change priority,CORRECTION
+road ki condition bahut kharab hai vasant kunj me,GRIEVANCE
+yes,CONFIRMATION
+i'm fine,GREETING
+footpath tiles are broken near model town,GRIEVANCE
+street light band hai railway station road me,GRIEVANCE
+stop,DENIAL
+what's up,GREETING
+no the location is wrong,CORRECTION
+i'm fine,GREETING
+hi sir,GREETING
+live electrical wire dangling dangerously near karol bagh,GRIEVANCE
+hi,GREETING
+asdfghjkl,UNKNOWN
+info,CAPABILITIES
+no thanks,DENIAL
+dhanyawad,THANKS
+hello sir there is a water pipe leaking on the road in civil lines,GRIEVANCE
+location is incorrect,CORRECTION
+yep,CONFIRMATION
+i'm good,GREETING
+waterlogging in karol bagh after light rain,GRIEVANCE
+cancel,DENIAL
+garbage has not been collected from karol bagh for 4 days,GRIEVANCE
+confirm,CONFIRMATION
+change the location,CORRECTION
+dhanyawad,THANKS
+street lights have been off for 3 nights in saket,GRIEVANCE
+street lights have been off for 4 nights in sector 17,GRIEVANCE
+menu,CAPABILITIES
+our taps are dry since monday,GRIEVANCE
+there is no water supply in sector 17,GRIEVANCE
+dark street near saket creating safety risk,GRIEVANCE
+change priority,CORRECTION
+drainage gutter overflow flooding road in model town,GRIEVANCE
+huge deep potholes on the main road in vasant kunj,GRIEVANCE
+yep,CONFIRMATION
+power has been out in karol bagh for 2 hours,GRIEVANCE
+footpath tiles are broken near railway station road,GRIEVANCE
+sahi hai,CONFIRMATION
+i am fine so the problem is that there is a road on that road there is a pipe leaking,GRIEVANCE
+the road near vasant kunj is completely broken and damaged,GRIEVANCE
+hello sir there is a water pipe leaking on the road in saket,GRIEVANCE
+road ki condition bahut kharab hai civil lines me,GRIEVANCE
+all good,GREETING
+dark street near railway station road creating safety risk,GRIEVANCE
+yes submit,CONFIRMATION
+hey assistant,GREETING
+kachra 4 din se nahi uthaya gaya hai railway station road se,GRIEVANCE
+drainage gutter overflow flooding road in civil lines,GRIEVANCE
+our taps are dry since monday,GRIEVANCE
+dirty contaminated water coming from tap in model town,GRIEVANCE
+i want to change the details,CORRECTION
+no thanks,DENIAL
+who won the match,UNKNOWN
+footpath tiles are broken near karol bagh,GRIEVANCE
+how is it going,GREETING
+random stuff,UNKNOWN
+submit it,CONFIRMATION
+our taps are dry since this morning,GRIEVANCE
+namaste,GREETING
+huge deep potholes on the main road in saket,GRIEVANCE
+nali overflow kar rahi hai civil lines me,GRIEVANCE
+huge pile of uncollected trash dumped near saket,GRIEVANCE
+cricket score,UNKNOWN
+good evening,GREETING
+garbage has not been collected from civil lines for 2 days,GRIEVANCE
+street light band hai karol bagh me,GRIEVANCE
+no,DENIAL
+blabla,UNKNOWN
+movie tickets,UNKNOWN
+how is it going,GREETING
+hey assistant,GREETING
+footpath tiles are broken near vasant kunj,GRIEVANCE
+edit details,CORRECTION
+i'm fine,GREETING
+hi sir,GREETING
+okay thanks,THANKS
+live electrical wire dangling dangerously near model town,GRIEVANCE
+namaste ji,GREETING
+haan,CONFIRMATION
+power has been out in vasant kunj for 2 hours,GRIEVANCE
+okay thanks,THANKS
+cancel,DENIAL
+hello assistant,GREETING
+fogging required urgently in model town,GRIEVANCE
+i am fine,GREETING
+namaste,GREETING
+info,CAPABILITIES
+drainage gutter overflow flooding road in model town,GRIEVANCE
+water has not come for 7 days in model town,GRIEVANCE
+how is it going,GREETING
+tum kaun ho,CAPABILITIES
+correct,CONFIRMATION
+hey,GREETING
+drainage gutter overflow flooding road in vasant kunj,GRIEVANCE
+kaise madad karoge,CAPABILITIES
+go ahead,CONFIRMATION
+thanks,THANKS
+options,CAPABILITIES
+footpath tiles are broken near railway station road,GRIEVANCE
+what features do you have,CAPABILITIES
+huge deep potholes on the main road in vasant kunj,GRIEVANCE
+hey,GREETING
+what is your purpose,CAPABILITIES
+overflowing waste bin in model town,GRIEVANCE
+i am fine,GREETING
+bahut dhanyawad,THANKS
+that's right,CONFIRMATION
+good morning bot,GREETING
+haye,GREETING
+waterlogging in civil lines after light rain,GRIEVANCE
+stagnant water pool near karol bagh causing mosquito breeding,GRIEVANCE
+our taps are dry since monday,GRIEVANCE
+kaise madad karoge,CAPABILITIES
+road ki condition bahut kharab hai railway station road me,GRIEVANCE
+hello how are you,GREETING
+dark street near civil lines creating safety risk,GRIEVANCE
+hellooo,GREETING
+live electrical wire dangling dangerously near saket,GRIEVANCE
+yep,CONFIRMATION
+no don't,DENIAL
+i am good,GREETING
+the road near civil lines is completely broken and damaged,GRIEVANCE
+huge deep potholes on the main road in vasant kunj,GRIEVANCE
+nali overflow kar rahi hai model town me,GRIEVANCE
+nah,DENIAL
+nali overflow kar rahi hai saket me,GRIEVANCE
+nope,DENIAL
+thanks a lot,THANKS
+what is 2 plus 2,UNKNOWN
+who won the match,UNKNOWN
+info,CAPABILITIES
+dirty contaminated water coming from tap in sector 17,GRIEVANCE
+drainage gutter overflow flooding road in vasant kunj,GRIEVANCE
+all good,GREETING
+okay,CONFIRMATION
+location is incorrect,CORRECTION
+the road near railway station road is completely broken and damaged,GRIEVANCE
+water has not come for 4 days in karol bagh,GRIEVANCE
+all good,GREETING
+huge pile of uncollected trash dumped near saket,GRIEVANCE
+that's not the category,CORRECTION
+who are you,CAPABILITIES
+traffic signal lights not working at sector 17 intersection,GRIEVANCE
+location change karo,CORRECTION
+hamare area vasant kunj me paani nahi aa raha hai,GRIEVANCE
+bijli 6 ghante se nahi hai model town me,GRIEVANCE
+there is no water supply in saket,GRIEVANCE
+no don't,DENIAL
+what is the weather today,UNKNOWN
+no thanks,DENIAL
+how can you help,CAPABILITIES
+stagnant water pool near saket causing mosquito breeding,GRIEVANCE
+thankyou,THANKS
+i am fine so the problem is that there is a road on that road there is a pipe leaking,GRIEVANCE
+namaste ji,GREETING
+dirty contaminated water coming from tap in vasant kunj,GRIEVANCE
+ha,CONFIRMATION
+hiii,GREETING
+hi bot,GREETING
+what are you,CAPABILITIES
+good morning bot,GREETING
+category wrong hai,CORRECTION
+power has been out in vasant kunj for 7 hours,GRIEVANCE
+garbage has not been collected from vasant kunj for 5 days,GRIEVANCE
+there is no water supply in saket,GRIEVANCE
+movie tickets,UNKNOWN
+nali overflow kar rahi hai sector 17 me,GRIEVANCE
+what's up,GREETING
+open manhole on road near railway station road,GRIEVANCE
+thankyou,THANKS
+there is no water supply in model town,GRIEVANCE
+sure,CONFIRMATION
+street lights have been off for 2 nights in sector 17,GRIEVANCE
+live electrical wire dangling dangerously near saket,GRIEVANCE
+hello how are you,GREETING
+xyz123,UNKNOWN
+thank you,THANKS
+huge deep potholes on the main road in railway station road,GRIEVANCE
+good afternoon,GREETING
+cancel,DENIAL
+hello sir there is a water pipe leaking on the road in vasant kunj,GRIEVANCE
+open manhole on road near model town,GRIEVANCE
+huge deep potholes on the main road in saket,GRIEVANCE
+thankyou,THANKS
+transformer is sparking violently near railway station road,GRIEVANCE
+our taps are dry since last night,GRIEVANCE
+na,DENIAL
+tell me a joke,UNKNOWN
+how are you,GREETING
+waterlogging in vasant kunj after light rain,GRIEVANCE
+thank you so much,THANKS
+hey assistant,GREETING
+nah,DENIAL
+stagnant water pool near saket causing mosquito breeding,GRIEVANCE
+live electrical wire dangling dangerously near sector 17,GRIEVANCE
+open manhole on road near model town,GRIEVANCE
+nahi,DENIAL
+dirty contaminated water coming from tap in karol bagh,GRIEVANCE
+kachra 4 din se nahi uthaya gaya hai vasant kunj se,GRIEVANCE
+the road near sector 17 is completely broken and damaged,GRIEVANCE
+thanks bot,THANKS
+kachra 4 din se nahi uthaya gaya hai karol bagh se,GRIEVANCE
+what is your purpose,CAPABILITIES
+good evening,GREETING
+what is 2 plus 2,UNKNOWN
+hello assistant,GREETING
+submit it,CONFIRMATION
+overflowing waste bin in model town,GRIEVANCE
+waterlogging in karol bagh after light rain,GRIEVANCE
+random stuff,UNKNOWN
+bahut dhanyawad,THANKS
+what features do you have,CAPABILITIES
+awesome thanks,THANKS
+dark street near model town creating safety risk,GRIEVANCE
+street lights have been off for 7 nights in railway station road,GRIEVANCE
+not correct,DENIAL
+traffic signal lights not working at vasant kunj intersection,GRIEVANCE
+all good,GREETING
+what is this,CAPABILITIES
+about,CAPABILITIES
+wrong department,CORRECTION
+drainage gutter overflow flooding road in sector 17,GRIEVANCE
+yes please,CONFIRMATION
+our taps are dry since this morning,GRIEVANCE
+how are you,GREETING
+sab badhiya,GREETING
+water has not come for 4 days in saket,GRIEVANCE
+that's wrong,DENIAL
+there is no water supply in sector 17,GRIEVANCE
+hi,GREETING
+edit details,CORRECTION
+sure,CONFIRMATION
+hey there,GREETING
+the road near civil lines is completely broken and damaged,GRIEVANCE
+waterlogging in sector 17 after light rain,GRIEVANCE
+how is it going,GREETING
+stagnant water pool near civil lines causing mosquito breeding,GRIEVANCE
+help me,CAPABILITIES
+transformer is sparking violently near civil lines,GRIEVANCE
+fogging required urgently in railway station road,GRIEVANCE
+the road near civil lines is completely broken and damaged,GRIEVANCE
+traffic signal lights not working at model town intersection,GRIEVANCE
+street light band hai saket me,GRIEVANCE
+open manhole on road near sector 17,GRIEVANCE
+overflowing waste bin in civil lines,GRIEVANCE
+transformer is sparking violently near vasant kunj,GRIEVANCE
+kya kar sakte ho,CAPABILITIES
+bijli 6 ghante se nahi hai model town me,GRIEVANCE
+thanks,THANKS
+not correct,DENIAL
+transformer is sparking violently near karol bagh,GRIEVANCE
+i am fine but the pipeline outside my house in karol bagh is leaking,GRIEVANCE
+bahut dhanyawad,THANKS
+open manhole on road near railway station road,GRIEVANCE
+huge pile of uncollected trash dumped near model town,GRIEVANCE
+haan,CONFIRMATION
+open manhole on road near sector 17,GRIEVANCE
+huge pile of uncollected trash dumped near model town,GRIEVANCE
+bijli 6 ghante se nahi hai karol bagh me,GRIEVANCE
+namaste ji,GREETING
+garbage has not been collected from civil lines for 4 days,GRIEVANCE
+drainage gutter overflow flooding road in railway station road,GRIEVANCE
+overflowing waste bin in railway station road,GRIEVANCE
+drainage gutter overflow flooding road in saket,GRIEVANCE
+good afternoon,GREETING
+yeah,CONFIRMATION
+na,DENIAL
+stagnant water pool near model town causing mosquito breeding,GRIEVANCE
+helo,GREETING
+dirty contaminated water coming from tap in karol bagh,GRIEVANCE
+i am fine so the problem is that there is a road on that road there is a pipe leaking,GRIEVANCE
+correct,CONFIRMATION
+nali overflow kar rahi hai sector 17 me,GRIEVANCE
+stop,DENIAL
+road ki condition bahut kharab hai model town me,GRIEVANCE
+nah,DENIAL
+thank you so much,THANKS
+good morning,GREETING
+xyz123,UNKNOWN
+no don't,DENIAL
+what can you do,CAPABILITIES
+confirm,CONFIRMATION
+what is 2 plus 2,UNKNOWN
+thank you so much,THANKS
+fogging required urgently in railway station road,GRIEVANCE
+that's not the category,CORRECTION
+i am fine so the problem is that there is a road on that road there is a pipe leaking,GRIEVANCE
+ok,CONFIRMATION
+open manhole on road near vasant kunj,GRIEVANCE
+yes please,CONFIRMATION
+what is the weather today,UNKNOWN
+good morning,GREETING
+what is this,CAPABILITIES
+i am fine but the pipeline outside my house in sector 17 is leaking,GRIEVANCE
+footpath tiles are broken near civil lines,GRIEVANCE
+sahi hai,CONFIRMATION
+what is the weather today,UNKNOWN
+dark street near vasant kunj creating safety risk,GRIEVANCE
