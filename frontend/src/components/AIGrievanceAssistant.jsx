@@ -17,6 +17,7 @@ export default function AIGrievanceAssistant() {
 
   const [inputText, setInputText] = useState("");
   const [isListening, setIsListening] = useState(false);
+  const [speechLanguage, setSpeechLanguage] = useState("en-IN");
   const [loading, setLoading] = useState(false);
   const [extractedData, setExtractedData] = useState(null);
   const [conversationState, setConversationState] = useState({});
@@ -29,7 +30,16 @@ export default function AIGrievanceAssistant() {
     chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages, showPreview, createdGrievance]);
 
-  // Voice Recognition Handler (Web Speech API for English & Hindi)
+  const speechLanguages = [
+    { code: "en-IN", label: "English" },
+    { code: "hi-IN", label: "Hindi" },
+    { code: "bn-IN", label: "Bengali" },
+    { code: "ta-IN", label: "Tamil" },
+    { code: "te-IN", label: "Telugu" },
+    { code: "mr-IN", label: "Marathi" },
+  ];
+
+  // Voice Recognition Handler uses the language selected by the citizen.
   const handleVoiceInput = () => {
     const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
@@ -39,7 +49,7 @@ export default function AIGrievanceAssistant() {
     }
 
     const recognition = new SpeechRecognition();
-    recognition.lang = "hi-IN"; // Supports Hindi & English code-switching
+    recognition.lang = speechLanguage;
     recognition.continuous = false;
     recognition.interimResults = false;
 
@@ -49,7 +59,12 @@ export default function AIGrievanceAssistant() {
       setInputText(transcript);
       setIsListening(false);
     };
-    recognition.onerror = () => setIsListening(false);
+    recognition.onerror = (event) => {
+      setIsListening(false);
+      if (event.error === "language-not-supported") {
+        alert("This language is not supported by your browser's speech recognition service. Please select another language or type your complaint.");
+      }
+    };
     recognition.onend = () => setIsListening(false);
 
     recognition.start();
@@ -304,6 +319,20 @@ export default function AIGrievanceAssistant() {
             >
               {isListening ? <MicOff size={20} className="spin" /> : <Mic size={20} />}
             </button>
+
+            <select
+              className="chat-input"
+              value={speechLanguage}
+              onChange={(e) => setSpeechLanguage(e.target.value)}
+              disabled={loading || showPreview || isListening}
+              aria-label="Speech input language"
+              title="Choose the language you will speak"
+              style={{ maxWidth: "130px", cursor: "pointer" }}
+            >
+              {speechLanguages.map((language) => (
+                <option key={language.code} value={language.code}>{language.label}</option>
+              ))}
+            </select>
 
             <input
               type="text"
