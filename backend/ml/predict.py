@@ -93,6 +93,27 @@ def explicit_civic_keyword_overrides(text):
     if not lower:
         return None
 
+    native_category_rules = [
+        ("Street Lighting", "Streetlight Off", "Electrical & Lighting Department", ["स्ट्रीट लाइट", "सड़क अंधेरी", "রাস্তার আলো", "தெருவிளக்கு", "వీధి దీపం", "स्ट्रीट लाईट"]),
+        ("Electricity", "Power Outage", "Electricity Department", ["बिजली", "विद्युत", "বিদ্যুৎ", "மின்சாரம்", "విద్యుత్", "वीज"]),
+        ("Waste Management", "Uncollected Garbage", "Sanitation & Waste Department", ["कचरा", "আবর্জনা", "குப்பை", "చెత్త", "कचरा"]),
+        ("Drainage", "Drainage Overflow", "Municipal Drainage Department", ["नाली", "नর্দমা", "சாக்கடை", "కాలువ", "नाला"]),
+        ("Roads / PWD", "Road Repair Needed", "Public Works Department", ["सड़क", "सड़क", "রাস্তা", "சாலை", "రోడ్డు", "रस्ता"]),
+        ("Water Supply", "No Water Supply", "Water Department", ["पानी", "जल आपूर्ति", "জল", "தண்ணீர்", "నీరు", "पाणी"]),
+    ]
+    native_signal = any(any(marker in lower for marker in markers) for _, _, _, markers in native_category_rules)
+    if native_signal:
+        for category, subcategory, department, markers in native_category_rules:
+            if any(marker in lower for marker in markers):
+                return {
+                    "department": department,
+                    "category": category,
+                    "subcategory": subcategory,
+                    "priority": "HIGH" if category in {"Water Supply", "Electricity", "Drainage"} else "MEDIUM",
+                    "needs_clarification": False,
+                    "clarification_prompt": "The issue has been classified from your selected Indian language."
+                }
+
     # Generic noise is only rejected when there are no real civic complaint terms.
     generic_noise = [
         "hello", "hi", "hey", "namaste", "greetings", "goy", "asdfgh", "abc", "test",

@@ -62,7 +62,14 @@ def run_intent_tests():
         ("paani nahi aa raha 3 din se", "GRIEVANCE"),
         ("kachra nahi uthaya gaya", "GRIEVANCE"),
         ("road toot gaya hai", "GRIEVANCE"),
-        ("nali overflow kar rahi hai", "GRIEVANCE")
+        ("nali overflow kar rahi hai", "GRIEVANCE"),
+
+        # Native-script grievance inputs
+        ("मेरे इलाके में बिजली नहीं आ रही है", "GRIEVANCE"),
+        ("আমাদের এলাকায় জল আসছে না", "GRIEVANCE"),
+        ("எங்கள் பகுதியில் தண்ணீர் வரவில்லை", "GRIEVANCE"),
+        ("మా ప్రాంతంలో నీరు రావడం లేదు", "GRIEVANCE"),
+        ("आमच्या भागात पाणी येत नाही", "GRIEVANCE")
     ]
 
     passed = 0

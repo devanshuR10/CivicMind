@@ -9,7 +9,8 @@ intent_samples = {
         "hi", "hello", "hey", "hii", "hiii", "hello there", "hey there",
         "good morning", "good afternoon", "good evening", "namaste", "namaskar",
         "hi bot", "hello bot", "hey assistant", "hello assistant", "namaste ji",
-        "good morning bot", "hello sir", "hi sir", "hey buddy", "haye", "helo", "hellooo"
+        "good morning bot", "hello sir", "hi sir", "hey buddy", "haye", "helo", "hellooo",
+        "नमस्ते", "नमस्कार", "হ্যালো", "হাই", "வணக்கம்", "ஹலோ", "నమస్తే", "హలో", "हॅलो"
     ],
     "CASUAL_CONVERSATION": [
         "how are you", "hello how are you", "i am fine", "i'm fine", "i am good", "i'm good",
@@ -83,6 +84,16 @@ grievance_templates = [
     "street light band hai {loc} me",
     "nali overflow kar rahi hai {loc} me",
     "bijli 6 ghante se nahi hai {loc} me",
+    "मेरे इलाके में बिजली नहीं आ रही है",
+    "हमारे मोहल्ले में पानी नहीं आ रहा है",
+    "আমাদের এলাকায় জল আসছে না",
+    "রাস্তার আলো কাজ করছে না",
+    "எங்கள் பகுதியில் தண்ணீர் வரவில்லை",
+    "தெருவிளக்கு வேலை செய்யவில்லை",
+    "మా ప్రాంతంలో నీరు రావడం లేదు",
+    "వీధి దీపం పనిచేయడం లేదు",
+    "आमच्या भागात पाणी येत नाही",
+    "रस्त्यावरील दिवा चालू नाही",
     "i am fine but the pipeline outside my house in {loc} is leaking",
     "hello sir there is a water pipe leaking on the road in {loc}",
     "i am fine so the problem is that there is a road on that road there is a pipe leaking"
