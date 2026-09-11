@@ -12,7 +12,7 @@ This guide outlines exactly how your SIH 2026 project works end-to-end, its core
 3. The **Local Machine Learning Pipeline** instantly analyzes the text, detects the intent, and extracts the core problem, the exact department it belongs to (e.g., *Public Works Department*), the severity/priority (*HIGH*), and the location.
 4. If the user forgets to mention the location, the AI asks a follow-up question conversationally.
 5. The citizen confirms, and the grievance is officially lodged in the system.
-
+ 
 ### Step 2: Intelligent Routing & Deduplication
 1. **Auto-Routing:** The backend assigns the grievance to the specific officer in charge of that zone and department. No manual sorting by operators is needed.
 2. **AI Deduplication (FAISS):** The system checks if 50 other people reported the same pothole. If so, it groups them all under a single **"Major Incident"** so the officer isn't spammed with 50 separate tickets. 

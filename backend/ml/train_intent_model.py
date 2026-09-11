@@ -37,7 +37,7 @@ def train_intent_model():
 
     print(f"Extracted {X_train.shape[1]} TF-IDF features.")
 
-    clf = CalibratedClassifierCV(LogisticRegression(max_iter=800, random_state=42, class_weight='balanced'))
+    clf = CalibratedClassifierCV(LogisticRegression(max_iter=800, random_state=42, class_weight='balanced'), n_jobs=-1)
     clf.fit(X_train, y_train)
 
     preds = clf.predict(X_test)

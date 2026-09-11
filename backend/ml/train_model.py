@@ -57,7 +57,7 @@ def train_and_evaluate():
 
     print("\n--- STAGE 2A: GLOBAL DEPARTMENT & CATEGORY CLASSIFIERS ---")
     for target in ['department', 'category', 'priority']:
-        clf = CalibratedClassifierCV(LinearSVC(C=1.5, class_weight='balanced', random_state=42))
+        clf = CalibratedClassifierCV(LinearSVC(C=1.5, class_weight='balanced', random_state=42), n_jobs=-1)
         clf.fit(X_all, df[target])
         preds = clf.predict(X_all)
         acc = accuracy_score(df[target], preds)
@@ -76,7 +76,7 @@ def train_and_evaluate():
         X_sub = vectorizer.transform(sub_df['cleaned_text'])
         y_sub = sub_df['subcategory']
 
-        sub_clf = CalibratedClassifierCV(LinearSVC(C=1.5, class_weight='balanced', random_state=42))
+        sub_clf = CalibratedClassifierCV(LinearSVC(C=1.5, class_weight='balanced', random_state=42), n_jobs=-1)
         sub_clf.fit(X_sub, y_sub)
 
         preds = sub_clf.predict(X_sub)
