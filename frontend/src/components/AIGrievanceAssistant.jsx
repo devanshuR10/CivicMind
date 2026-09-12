@@ -2,7 +2,17 @@ import React, { useState, useContext, useRef, useEffect } from "react";
 import { AuthContext } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 import GrievancePreviewCard from "./GrievancePreviewCard";
-import { Bot, Send, MapPin, CheckCircle, Mic, MicOff, RefreshCw } from "lucide-react";
+import {
+  Bot,
+  Send,
+  MapPin,
+  CheckCircle,
+  Mic,
+  MicOff,
+  RefreshCw,
+  ShieldCheck,
+  MessageSquare,
+} from "lucide-react";
 
 export default function AIGrievanceAssistant() {
   const { token } = useContext(AuthContext);
@@ -11,7 +21,8 @@ export default function AIGrievanceAssistant() {
   const [messages, setMessages] = useState([
     {
       sender: "ai",
-      text: "Hello! 👋 I'm the Civic AI Assistant. Tell me what problem you are facing in your locality.",
+      text:
+        "Hello! 👋 I'm JanSewa AI. Tell me about the civic problem you are facing in your locality. You can type or use voice input.",
     },
   ]);
 
@@ -39,12 +50,14 @@ export default function AIGrievanceAssistant() {
     { code: "mr-IN", label: "Marathi" },
   ];
 
-  // Voice Recognition Handler uses the language selected by the citizen.
   const handleVoiceInput = () => {
-    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    const SpeechRecognition =
+      window.SpeechRecognition || window.webkitSpeechRecognition;
 
     if (!SpeechRecognition) {
-      alert("Speech recognition is not supported in this browser. Please use text input.");
+      alert(
+        "Speech recognition is not supported in this browser. Please use text input."
+      );
       return;
     }
 
@@ -54,17 +67,23 @@ export default function AIGrievanceAssistant() {
     recognition.interimResults = false;
 
     recognition.onstart = () => setIsListening(true);
+
     recognition.onresult = (event) => {
       const transcript = event.results[0][0].transcript;
       setInputText(transcript);
       setIsListening(false);
     };
+
     recognition.onerror = (event) => {
       setIsListening(false);
+
       if (event.error === "language-not-supported") {
-        alert("This language is not supported by your browser's speech recognition service. Please select another language or type your complaint.");
+        alert(
+          "This language is not supported by your browser's speech recognition service. Please select another language or type your complaint."
+        );
       }
     };
+
     recognition.onend = () => setIsListening(false);
 
     recognition.start();
@@ -76,19 +95,30 @@ export default function AIGrievanceAssistant() {
         (position) => {
           const lat = position.coords.latitude;
           const lng = position.coords.longitude;
+
           setGeoCoords({ lat, lng });
 
           const locText = `GPS Location (${lat.toFixed(4)}, ${lng.toFixed(4)})`;
 
           if (extractedData) {
-            const updated = { ...extractedData, location_text: locText, latitude: lat, longitude: lng, missing_information: [] };
+            const updated = {
+              ...extractedData,
+              location_text: locText,
+              latitude: lat,
+              longitude: lng,
+              missing_information: [],
+            };
+
             setExtractedData(updated);
             setShowPreview(true);
 
             setMessages((prev) => [
               ...prev,
-              { sender: "user", text: "Used current GPS location" },
-              { sender: "ai", text: `Got it! Set location to ${locText}. Please confirm the details below:` },
+              { sender: "user", text: "Used my current GPS location" },
+              {
+                sender: "ai",
+                text: `Got it! I've set the grievance location to ${locText}. Please review the details below before submitting.`,
+              },
             ]);
           }
         },
@@ -104,7 +134,11 @@ export default function AIGrievanceAssistant() {
     const userQuery = inputText.trim();
     setInputText("");
 
-    setMessages((prev) => [...prev, { sender: "user", text: userQuery }]);
+    setMessages((prev) => [
+      ...prev,
+      { sender: "user", text: userQuery },
+    ]);
+
     setLoading(true);
 
     try {
@@ -122,7 +156,10 @@ export default function AIGrievanceAssistant() {
       });
 
       const data = await res.json();
-      if (!res.ok) throw new Error(data.error || "Failed to analyze message");
+
+      if (!res.ok) {
+        throw new Error(data.error || "Failed to analyze message");
+      }
 
       const newState = data.conversation_state || {};
       setConversationState(newState);
@@ -136,39 +173,52 @@ export default function AIGrievanceAssistant() {
             ...prev,
             {
               sender: "ai",
-              text: data.ai_message || `I understand this is a ${result.category} issue. Where is the problem occurring?`,
+              text:
+                data.ai_message ||
+                `I understand this is a ${result.category} issue. Where is the problem occurring?`,
               showLocButton: true,
             },
           ]);
+
           setShowPreview(false);
         } else {
           setMessages((prev) => [
             ...prev,
             {
               sender: "ai",
-              text: data.ai_message || `Thank you. I have prepared your ${result.category} grievance for the ${result.department}. Please confirm below:`,
+              text:
+                data.ai_message ||
+                `Thank you. I've prepared your ${result.category} grievance for the ${result.department}. Please review and confirm the details below.`,
             },
           ]);
+
           setShowPreview(true);
         }
       } else {
-        // Conversational non-grievance response (Greeting, Capabilities, Thanks, etc.)
         setExtractedData(null);
         setShowPreview(false);
+
         setMessages((prev) => [
           ...prev,
           {
             sender: "ai",
-            text: data.ai_message,
+            text:
+              data.ai_message ||
+              "I can help you report civic and government service problems. Please describe the issue you are facing.",
           },
         ]);
-        setShowPreview(false);
       }
     } catch (err) {
       console.error("AI Parse Error:", err);
+
       setMessages((prev) => [
         ...prev,
-        { sender: "ai", text: "Sorry, I had trouble processing that. Please describe your issue again." },
+        {
+          sender: "ai",
+          text:
+            "Sorry, I couldn't process that message right now. Please describe your civic issue again.",
+          error: true,
+        },
       ]);
     } finally {
       setLoading(false);
@@ -177,6 +227,7 @@ export default function AIGrievanceAssistant() {
 
   const handleSubmitGrievance = async (finalData) => {
     setLoading(true);
+
     try {
       const res = await fetch("/api/grievances", {
         method: "POST",
@@ -192,7 +243,10 @@ export default function AIGrievanceAssistant() {
       });
 
       const data = await res.json();
-      if (!res.ok) throw new Error(data.error || "Failed to submit grievance");
+
+      if (!res.ok) {
+        throw new Error(data.error || "Failed to submit grievance");
+      }
 
       setCreatedGrievance(data.grievance);
       setShowPreview(false);
@@ -204,85 +258,169 @@ export default function AIGrievanceAssistant() {
     }
   };
 
+  const resetAssistant = () => {
+    setCreatedGrievance(null);
+    setExtractedData(null);
+    setConversationState({});
+    setGeoCoords({ lat: null, lng: null });
+    setShowPreview(false);
+    setMessages([
+      {
+        sender: "ai",
+        text:
+          "Hello! 👋 I'm JanSewa AI. Tell me about the civic problem you are facing in your locality.",
+      },
+    ]);
+  };
+
   return (
-    <div style={{ maxWidth: "800px", margin: "0 auto" }}>
-      <div style={{ marginBottom: "1.5rem" }}>
-        <h2 style={{ fontSize: "1.6rem", display: "flex", alignItems: "center", gap: "0.5rem" }}>
-          <Bot style={{ color: "#3b82f6" }} /> AI Grievance Assistant
-        </h2>
-        <p style={{ color: "#94a3b8", fontSize: "0.95rem" }}>
-          Describe your civic problem naturally in English or Hindi (Text or Voice). Local AI will automatically route it to the right department.
-        </p>
+    <div className="ai-grievance-page">
+      {/* Page heading */}
+      <div className="ai-grievance-heading">
+        <div className="ai-grievance-heading-icon">
+          <Bot size={22} />
+        </div>
+
+        <div>
+          <h2>JanSewa AI Civic Assistant</h2>
+          <p>
+            Describe your civic problem naturally. Our local AI helps identify
+            the issue, department and required grievance details.
+          </p>
+        </div>
       </div>
 
       {createdGrievance ? (
-        <div className="card" style={{ border: "1px solid #10b981", background: "linear-gradient(135deg, #064e3b, #0f172a)", padding: "2rem" }}>
-          <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "1rem" }}>
-            <CheckCircle size={32} style={{ color: "#34d399" }} />
+        <div className="grievance-success-card">
+          <div className="grievance-success-heading">
+            <div className="grievance-success-icon">
+              <CheckCircle size={28} />
+            </div>
+
             <div>
-              <h3 style={{ fontSize: "1.3rem", color: "#f8fafc" }}>Grievance Successfully Registered</h3>
-              <div style={{ fontSize: "0.85rem", color: "#a7f3d0" }}>Your ticket has been recorded and routed</div>
+              <h3>Grievance Successfully Registered</h3>
+              <p>Your complaint has been recorded and routed to the appropriate department.</p>
             </div>
           </div>
 
-          <div style={{ background: "rgba(0,0,0,0.3)", borderRadius: "10px", padding: "1.25rem", margin: "1.5rem 0" }}>
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "1rem" }}>
-              <span style={{ fontSize: "0.85rem", color: "#94a3b8" }}>TRACKING ID</span>
-              <span className="tracking-id" style={{ fontSize: "1.2rem", letterSpacing: "1px" }}>{createdGrievance.tracking_number}</span>
+          <div className="grievance-ticket-card">
+            <div className="grievance-ticket-header">
+              <span>TRACKING ID</span>
+              <strong>{createdGrievance.tracking_number}</strong>
             </div>
 
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))", gap: "1rem" }}>
+            <div className="grievance-ticket-grid">
               <div>
                 <span className="preview-label">Category</span>
-                <div style={{ fontWeight: "600" }}>{createdGrievance.category}</div>
+                <strong>{createdGrievance.category}</strong>
               </div>
+
               <div>
                 <span className="preview-label">Department</span>
-                <div style={{ color: "#60a5fa" }}>{createdGrievance.department}</div>
+                <strong>{createdGrievance.department}</strong>
               </div>
+
               <div>
                 <span className="preview-label">Priority</span>
-                <span className={`badge badge-${createdGrievance.priority.toLowerCase()}`}>{createdGrievance.priority}</span>
+                <span
+                  className={`badge badge-${String(
+                    createdGrievance.priority || "medium"
+                  ).toLowerCase()}`}
+                >
+                  {createdGrievance.priority}
+                </span>
               </div>
+
               <div>
                 <span className="preview-label">Status</span>
-                <span className="badge badge-submitted">{createdGrievance.status}</span>
+                <span className="badge badge-submitted">
+                  {createdGrievance.status}
+                </span>
               </div>
             </div>
           </div>
 
-          <div style={{ display: "flex", gap: "1rem" }}>
+          <div className="grievance-success-actions">
             <button className="btn btn-primary" onClick={() => navigate("/")}>
-              View My Grievances Dashboard
+              View My Grievances
             </button>
-            <button className="btn btn-outline" onClick={() => { setCreatedGrievance(null); setExtractedData(null); setConversationState({}); setShowPreview(false); setMessages([{ sender: "ai", text: "Hello! 👋 Tell me what problem you are facing in your locality." }]); }}>
-              <RefreshCw size={16} /> File Another Grievance
+
+            <button className="btn btn-secondary" onClick={resetAssistant}>
+              <RefreshCw size={16} />
+              File Another Grievance
             </button>
           </div>
         </div>
       ) : (
-        <div className="chat-container">
-          <div className="chat-header">
-            <div style={{ display: "flex", alignItems: "center", gap: "0.6rem" }}>
-              <div className="avatar ai" style={{ width: "30px", height: "30px" }}>AI</div>
+        <div className="chat-container ai-grievance-chat">
+          {/* Chat header */}
+          <div className="chat-header ai-grievance-chat-header">
+            <div className="ai-chat-identity">
+              <div className="avatar ai">
+                <Bot size={17} />
+              </div>
+
               <div>
-                <div style={{ fontWeight: "600", fontSize: "0.95rem" }}>Civic AI Lodging Bot (Local ML)</div>
-                <div style={{ fontSize: "0.75rem", color: "#10b981", display: "flex", alignItems: "center", gap: "0.25rem" }}>
-                  <span style={{ width: "6px", height: "6px", borderRadius: "50%", background: "#10b981", display: "inline-block" }}></span> Offline Intent & Grievance Models Active
+                <div className="ai-chat-name">
+                  JanSewa AI
+                </div>
+
+                <div className="ai-chat-status">
+                  <span className="status-dot" />
+                  Local intent & grievance models active
                 </div>
               </div>
             </div>
+
+            <div className="ai-chat-badge">
+              <ShieldCheck size={14} />
+              Local AI
+            </div>
           </div>
 
-          <div className="chat-messages">
+          {/* Messages */}
+          <div className="chat-messages ai-grievance-messages">
             {messages.map((msg, idx) => (
-              <div key={idx} className={`chat-message ${msg.sender}`}>
-                <div className={`avatar ${msg.sender}`}>{msg.sender === "ai" ? "AI" : "You"}</div>
-                <div>
-                  <div className="message-bubble" style={{ whiteSpace: "pre-line" }}>{msg.text}</div>
+              <div
+                key={idx}
+                className={`chat-message ${msg.sender}`}
+              >
+                <div className={`avatar ${msg.sender}`}>
+                  {msg.sender === "ai" ? (
+                    <Bot size={16} />
+                  ) : (
+                    "You"
+                  )}
+                </div>
+
+                <div className="ai-message-content">
+                  <div className="ai-message-label">
+                    {msg.sender === "ai" ? "JanSewa AI" : "You"}
+                  </div>
+
+                  <div
+                    className={`message-bubble ${
+                      msg.error ? "ai-message-error" : ""
+                    }`}
+                    style={{ whiteSpace: "pre-line" }}
+                  >
+                    {msg.error && (
+                      <span className="ai-message-error-icon">
+                        <RefreshCw size={14} />
+                      </span>
+                    )}
+
+                    {msg.text}
+                  </div>
+
                   {msg.showLocButton && (
-                    <button className="btn btn-outline" style={{ marginTop: "0.5rem", fontSize: "0.8rem", padding: "0.35rem 0.75rem" }} onClick={handleUseMyLocation}>
-                      <MapPin size={14} /> Use My Current GPS Location
+                    <button
+                      className="btn btn-outline ai-location-button"
+                      onClick={handleUseMyLocation}
+                      type="button"
+                    >
+                      <MapPin size={14} />
+                      Use My Current Location
                     </button>
                   )}
                 </div>
@@ -291,9 +429,21 @@ export default function AIGrievanceAssistant() {
 
             {loading && (
               <div className="chat-message ai">
-                <div className="avatar ai">AI</div>
-                <div className="message-bubble" style={{ display: "flex", alignItems: "center", gap: "0.5rem", color: "#94a3b8" }}>
-                  <RefreshCw className="spin" size={16} /> Local AI understanding message...
+                <div className="avatar ai">
+                  <Bot size={16} />
+                </div>
+
+                <div className="ai-message-content">
+                  <div className="ai-message-label">JanSewa AI</div>
+
+                  <div className="message-bubble ai-thinking">
+                    <span className="ai-thinking-dots">
+                      <i />
+                      <i />
+                      <i />
+                    </span>
+                    Understanding your complaint...
+                  </div>
                 </div>
               </div>
             )}
@@ -309,42 +459,65 @@ export default function AIGrievanceAssistant() {
             <div ref={chatEndRef} />
           </div>
 
-          <form onSubmit={handleSendMessage} className="chat-input-area">
+          {/* Input */}
+          <form onSubmit={handleSendMessage} className="chat-input-area ai-grievance-input-area">
             <button
               type="button"
-              className="btn btn-outline"
-              style={{ padding: "0.6rem", color: isListening ? "#ef4444" : "#94a3b8" }}
+              className={`btn btn-outline ai-voice-button ${
+                isListening ? "is-listening" : ""
+              }`}
               onClick={handleVoiceInput}
-              title="Speak complaint (Voice Input in Hindi / English)"
+              title="Speak your complaint"
+              aria-label="Speak your complaint"
+              disabled={loading || showPreview}
             >
-              {isListening ? <MicOff size={20} className="spin" /> : <Mic size={20} />}
+              {isListening ? (
+                <MicOff size={19} />
+              ) : (
+                <Mic size={19} />
+              )}
             </button>
 
             <select
-              className="chat-input"
+              className="chat-input ai-language-select"
               value={speechLanguage}
               onChange={(e) => setSpeechLanguage(e.target.value)}
               disabled={loading || showPreview || isListening}
               aria-label="Speech input language"
-              title="Choose the language you will speak"
-              style={{ maxWidth: "130px", cursor: "pointer" }}
+              title="Choose your voice input language"
             >
               {speechLanguages.map((language) => (
-                <option key={language.code} value={language.code}>{language.label}</option>
+                <option key={language.code} value={language.code}>
+                  {language.label}
+                </option>
               ))}
             </select>
 
-            <input
-              type="text"
-              className="chat-input"
-              placeholder={isListening ? "Listening... Speak your complaint" : "Type a message (e.g. 'hi', 'what can you do', 'No water supply in Model Town')..."}
-              value={inputText}
-              onChange={(e) => setInputText(e.target.value)}
-              disabled={loading || showPreview}
-            />
+            <div className="ai-text-input-wrap">
+              <MessageSquare size={15} />
+              <input
+                type="text"
+                className="chat-input ai-text-input"
+                placeholder={
+                  isListening
+                    ? "Listening... Speak your complaint"
+                    : "Describe your civic problem..."
+                }
+                value={inputText}
+                onChange={(e) => setInputText(e.target.value)}
+                disabled={loading || showPreview}
+                aria-label="Describe your civic problem"
+              />
+            </div>
 
-            <button type="submit" className="btn btn-primary" disabled={loading || !inputText.trim() || showPreview}>
-              <Send size={18} />
+            <button
+              type="submit"
+              className="btn btn-primary ai-send-button"
+              disabled={loading || !inputText.trim() || showPreview}
+              aria-label="Send complaint"
+            >
+              <Send size={17} />
+              <span>Send</span>
             </button>
           </form>
         </div>
